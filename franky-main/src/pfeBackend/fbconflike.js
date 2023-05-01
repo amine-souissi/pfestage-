@@ -5,10 +5,13 @@ import connectWifi from './connectwifi.js' ;
 const getlikes_ofuser = ((target_pageid)=> {
 	status = false
 	FB.api(
-		'/me/likes',
-		'GET',
-		{},
-		function(response) {
+  '/me/likes',
+  'GET',
+  {},
+  function(response) {
+      // Insert your code here
+  }
+);
 			for (page in response.data ) {
 				var page_id = page.id
 				if (target_pageid == page_id) {
